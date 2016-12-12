@@ -1,0 +1,10 @@
+{
+  defaultExt: 'js',
+  
+  files: [
+    'StateCodes',
+    'tokenizer',
+    'syntaxTree',
+    'jsGen'
+  ]
+}
