@@ -1,24 +1,5 @@
 (function(qsc) {
-  var StateCodes = {
-    EXEC: 0, // Main execution state
-    WORD: 1, // /[a-zA-Z\$_][a-zA-Z0-9\$_]*/
-    NUMBER: 2, // A sequence of digits, optionally preceded by 0x 0b or 0o
-    SPACE_TAB: 3, // Space or tab
-    PUNC_SEQ: 4, // A sequence of punctuation excluding (){}[]
-    LP: 5, // Left paren (
-    RP: 6, // Right paren )
-    LS: 7, // Left square bracket [
-    RS: 8, // Right square bracket ]
-    LC: 9, // Left curly brace {
-    RC: 10, // Right curly brace }
-    INVALID: 11,
-    NEWLINE: 12,
-    COMMENT: 13,
-    STRING: 14,
-    STRING_PART: 15,
-    STRING_BACKSLASH: 16,
-    STRING_INTERPOLATION: 17
-  };
+  var StateCodes = qsc.StateCodes;
   
   var EasyRe = {
     ALPHA: /[a-zA-Z]/,
