@@ -1,7 +1,8 @@
 {
-  "defaultExt": "js",
+  "defaultExt": ".js",
   
   "files": [
+    "QuartzscriptCompiler",
     "StateCodes",
     "tokenizer",
     "syntaxTree",
