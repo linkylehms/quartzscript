@@ -32,6 +32,6 @@
   /** START EXPORTS **/
   
   qsc.StateCodes = StateCodes;
-})(QuartzscriptComiler);
+})(QuartzscriptCompiler);
 
 /** END FILE StateCodes.js **/
