@@ -175,6 +175,11 @@
       }
     }
     
+    // Resolve any unended states
+    while (data.length) {
+      endState();
+    }
+    
     return tokens;
   };
   
