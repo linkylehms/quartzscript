@@ -1,3 +1,5 @@
+/** START FILE tokenizer.js **/
+
 (function(qsc) {
   var StateCodes = qsc.StateCodes;
   
@@ -70,9 +72,9 @@
               })[char];
               addState({state: delimState});
               endState();
-            } else if (EasyRe.PUNC.test()) {
-              addState({state: StateCodes.PUNC_SEQ, contents: char});
             }
+          } else if (EasyRe.PUNC.test()) {
+              addState({state: StateCodes.PUNC_SEQ, contents: char});
           }
           break;
         case StateCodes.WORD:
@@ -179,3 +181,5 @@
   /** START EXPORTS **/
   qsc.compiler.tokenize = tokenize;
 })(QuartzscriptCompiler);
+
+/** END FILE tokenizer.js **/
