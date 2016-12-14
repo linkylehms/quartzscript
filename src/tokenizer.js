@@ -179,7 +179,7 @@
   };
   
   /** START EXPORTS **/
-  qsc.compiler.tokenize = tokenize;
+  qsc.tokenize = tokenize;
 })(QuartzscriptCompiler);
 
 /** END FILE tokenizer.js **/
