@@ -88,7 +88,7 @@
         case StateCodes.NUMBER:
           if (({2: EasyRe.NUM_BIN, 8: EasyRe.NUM_OCT, 10: EasyRe.NUM, 16: EasyRe.NUM_HEX})[getLatestData().radix].test(char)) {
             getLatestData().contents += char;
-          } else if (this.contents.length === 1 && EasyRe.RAD_PRE_LETTER.test(char)) {
+          } else if (getLatestData().contents.length === 1 && EasyRe.RAD_PRE_LETTER.test(char)) {
             var radix = ({
               x: 16,
               o: 8,
