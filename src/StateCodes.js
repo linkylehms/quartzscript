@@ -1,3 +1,5 @@
+/** START FILE StateCodes.js **/
+
 (function(qsc) {
   var StateCodes = {
     EXEC: 0,
@@ -31,3 +33,5 @@
   
   qsc.StateCodes = StateCodes;
 })(QuartzscriptComiler);
+
+/** END FILE StateCodes.js **/
