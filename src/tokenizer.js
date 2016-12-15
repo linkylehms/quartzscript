@@ -7,9 +7,10 @@
   
   function tokenize(code) {
     var data = [];
+    var tokens = [];
     for (var index = 0; index < code.length; index++) {
       var char = code.charAt(index);
-      
+      var latestData = data.slice(-1);
     }
   }
   
